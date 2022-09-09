@@ -1,0 +1,55 @@
+main {
+	text-align: center;
+	background-color: #EFEFFF;
+	width: 700px;
+	border: 1px solid #BBBBFF;
+	box-shadow: 4px 4px #BBBBFF;
+	border-radius: 10px;
+	margin: auto;
+}
+
+form {
+	margin: 20px;
+}
+
+h1 {
+	color: #46008c;
+	border: 1px solid #BBBBFF;
+	border-radius: 10px;
+	background-color: #F5F4FE;
+	display: inline-flex;
+	box-shadow: 2px 2px #BBBBFF;
+	padding: 10px;
+}
+
+h2 {
+	text-align: left;
+	margin-left: 20px;
+}
+
+input[type="number"] {
+	width: 50px;
+	text-align: right;
+}
+
+label > span {
+	font-weight: bold;
+	font-style: italic;
+}
+
+label {
+	margin-right: 1.5em;
+}
+
+input[type="button"] {
+	font-weight: bold;
+	font-size: 1em;
+}
+
+label[for="kerulet"], label[for="terulet"] {
+	margin-right: 5em;
+}
+
+input[name="kerulet"], input[name="terulet"] {
+	width: 5em;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Síkidom</title>
+</head>
+<body>
+	<main>
+		<form action="">
+			<h1>A téglalap</h1>
+			<h2>Kiindulási adatok:</h2>
+			<p>
+				<label for="a"><span>'a'</span> oldal hossza:</label>
+				<input type="number" name="a" id="a"> cm
+			</p>
+			<p>
+				<label for="b"><span>'b'</span> oldal hossza:</label>
+				<input type="number" name="b" id="b"> cm
+			</p>
+			<p><input type="button" value="Számol" onclick="szamol()"></p>
+			
+			<hr>
+
+			<h2>Eredmények:</h2>
+			<p>
+				<label for="kerulet">Kerület:</label>
+				<input type="number" name="kerulet" id="kerulet" disabled> cm
+			</p>
+			<p>
+				<label for="terulet">Terület:</label>
+				<input type="number" name="terulet" id="terulet" disabled> cm<sup>2</sup>
+			</p>
+		</form>
+	</main>
+	<script src="javas.js"></script>
+</body>
+</html>
