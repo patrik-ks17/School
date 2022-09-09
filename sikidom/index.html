@@ -8,29 +8,84 @@
 </head>
 <body>
 	<main>
-		<form action="">
+		<nav>
+			<span class="nav-item" onclick="valt('teglalap')">Téglalap</span>
+			<span class="nav-item" onclick="valt('kor')">Kör</span>
+			<span class="nav-item" onclick="valt('haromszog')">Háromszög</span>
+			<span class="nav-item" onclick="valt('negyzet')">Négyzet</span>
+			<span class="nav-item" onclick="valt('hatszog')">Hatszög</span>
+		</nav>
+		<form id="teglalap">
 			<h1>A téglalap</h1>
 			<h2>Kiindulási adatok:</h2>
 			<p>
-				<label for="a"><span>'a'</span> oldal hossza:</label>
-				<input type="number" name="a" id="a"> cm
+				<label for="teglalap_a"><span>'a'</span> oldal hossza:</label>
+				<input type="number" name="teglalap_a" id="teglalap_a"> cm
 			</p>
 			<p>
-				<label for="b"><span>'b'</span> oldal hossza:</label>
-				<input type="number" name="b" id="b"> cm
+				<label for="teglalap_b"><span>'b'</span> oldal hossza:</label>
+				<input type="number" name="teglalap_b" id="teglalap_b"> cm
 			</p>
-			<p><input type="button" value="Számol" onclick="szamol()"></p>
+			<p><input type="button" value="Számol" onclick="teglalap_szamol()"></p>
 			
 			<hr>
 
 			<h2>Eredmények:</h2>
 			<p>
-				<label for="kerulet">Kerület:</label>
-				<input type="number" name="kerulet" id="kerulet" disabled> cm
+				<label for="teglalap_kerulet">Kerület:</label>
+				<input type="number" name="teglalap_kerulet" id="teglalap_kerulet" disabled> cm
 			</p>
 			<p>
-				<label for="terulet">Terület:</label>
-				<input type="number" name="terulet" id="terulet" disabled> cm<sup>2</sup>
+				<label for="teglalap_terulet">Terület:</label>
+				<input type="number" name="teglalap_terulet" id="teglalap_terulet" disabled> cm<sup>2</sup>
+			</p>
+		</form>
+
+		<form id="kor">
+			<h1>A kör</h1>
+			<h2>Adatok:</h2>
+			<p>
+				<label for="kor_sugar">A kör sugara:</label>
+				<input type="number" name="kor_sugar" id="kor_sugar" onfocus="torol()" onblur="kor_szamol('kor_sugar')"> cm
+			</p>
+			<p>
+				<label for="kor_kerulet">A kör kerülete:</label>
+				<input type="number" name="kor_kerulet" id="kor_kerulet" onfocus="torol()" onblur="kor_szamol('kor_kerulet')"> cm
+			</p>
+			<p>
+				<label for="kor_terulet">A kör területe:</label>
+				<input type="number" name="kor_terulet" id="kor_terulet" onfocus="torol()" onblur="kor_szamol('kor_terulet')"> cm<sup>2</sup>
+			</p>
+			<p><input type="button" value="Számol"></p>
+		</form>
+
+		<form id="haromszog">
+			<h1>A háromszög</h1>
+			<h2>Kiindulási adatok:</h2>
+			<p>
+				<label for="haromszog_a"><span>'a'</span> oldal hossza:</label>
+				<input type="number" name="haromszog_a" id="haromszog_a"> cm
+			</p>
+			<p>
+				<label for="haromszog_b"><span>'b'</span> oldal hossza:</label>
+				<input type="number" name="haromszog_b" id="haromszog_b"> cm
+			</p>
+			<p>
+				<label for="haromszog_c"><span>'c'</span> oldal hossza:</label>
+				<input type="number" name="haromszog_c" id="haromszog_c"> cm
+			</p>
+			<p><input type="button" value="Számol" onclick="haromszog_szamol()"></p>
+			
+			<hr>
+
+			<h2>Eredmények:</h2>
+			<p>
+				<label for="haromszog_k">Kerület:</label>
+				<input type="number" name="haromszog_k" id="haromszog_k" disabled> cm
+			</p>
+			<p>
+				<label for="haromszog_t">Terület:</label>
+				<input type="number" name="haromszog_t" id="haromszog_t" disabled> cm<sup>2</sup>
 			</p>
 		</form>
 	</main>

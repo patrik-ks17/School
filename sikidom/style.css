@@ -1,44 +1,41 @@
-main {
+form {
 	text-align: center;
 	background-color: #EFEFFF;
 	width: 700px;
 	border: 1px solid #BBBBFF;
-	box-shadow: 4px 4px #BBBBFF;
+	box-shadow: 4px 4px #400090;
 	border-radius: 10px;
 	margin: auto;
-}
-
-form {
 	margin: 20px;
 }
 
+
 h1 {
-	color: #46008c;
+	color: #400090;
 	border: 1px solid #BBBBFF;
 	border-radius: 10px;
 	background-color: #F5F4FE;
 	display: inline-flex;
-	box-shadow: 2px 2px #BBBBFF;
+	box-shadow: 2px 2px #400090;
 	padding: 10px;
 }
-
 h2 {
 	text-align: left;
 	margin-left: 20px;
 }
 
-input[type="number"] {
-	width: 50px;
-	text-align: right;
-}
 
 label > span {
 	font-weight: bold;
 	font-style: italic;
 }
-
 label {
 	margin-right: 1.5em;
+}
+
+input[type="number"] {
+	width: 70px;
+	text-align: right;
 }
 
 input[type="button"] {
@@ -46,10 +43,19 @@ input[type="button"] {
 	font-size: 1em;
 }
 
-label[for="kerulet"], label[for="terulet"] {
-	margin-right: 5em;
+
+form:not(#teglalap) {
+	display: none;
 }
 
-input[name="kerulet"], input[name="terulet"] {
-	width: 5em;
+nav {
+	background-color: #400090;
+	color: white;
+	margin-bottom: 10px;
+}
+
+.nav-item {
+	display: inline-block;
+	padding: 20px;
+	cursor: pointer;
 }
