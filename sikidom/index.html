@@ -27,9 +27,7 @@
 				<input type="number" name="teglalap_b" id="teglalap_b"> cm
 			</p>
 			<p><input type="button" value="Számol" onclick="teglalap_szamol()"></p>
-			
 			<hr>
-
 			<h2>Eredmények:</h2>
 			<p>
 				<label for="teglalap_kerulet">Kerület:</label>
@@ -75,9 +73,7 @@
 				<input type="number" name="haromszog_c" id="haromszog_c"> cm
 			</p>
 			<p><input type="button" value="Számol" onclick="haromszog_szamol()"></p>
-			
 			<hr>
-
 			<h2>Eredmények:</h2>
 			<p>
 				<label for="haromszog_k">Kerület:</label>
@@ -86,6 +82,46 @@
 			<p>
 				<label for="haromszog_t">Terület:</label>
 				<input type="number" name="haromszog_t" id="haromszog_t" disabled> cm<sup>2</sup>
+			</p>
+		</form>
+
+		<form id="negyzet">
+			<h1>A négyzet</h1>
+			<h2>Kiindulási adatok:</h2>
+			<p>
+				<label for="negyzet_a"><span>'a'</span> oldal hossza:</label>
+				<input type="number" name="negyzet_a" id="negyzet_a"> cm
+			</p>
+			<p><input type="button" value="Számol" onclick="negyzet_szamol()"></p>
+			<hr>
+			<h2>Eredmények:</h2>
+			<p>
+				<label for="negyzet_k">Kerület:</label>
+				<input type="number" name="negyzet_k" id="negyzet_k" disabled> cm
+			</p>
+			<p>
+				<label for="negyzet_t">Terület:</label>
+				<input type="number" name="negyzet_t" id="negyzet_t" disabled> cm<sup>2</sup>
+			</p>
+		</form>
+
+		<form id="hatszog">
+			<h1>A hatszög</h1>
+			<h2>Kiindulási adatok:</h2>
+			<p>
+				<label for="hatszog_a"><span>'a'</span> oldal hossza:</label>
+				<input type="number" name="hatszog_a" id="hatszog_a"> cm
+			</p>
+			<p><input type="button" value="Számol" onclick="hatszog_szamol()"></p>
+			<hr>
+			<h2>Eredmények:</h2>
+			<p>
+				<label for="hatszog_k">Kerület:</label>
+				<input type="number" name="hatszog_k" id="hatszog_k" disabled> cm
+			</p>
+			<p>
+				<label for="hatszog_t">Terület:</label>
+				<input type="number" name="hatszog_t" id="hatszog_t" disabled> cm<sup>2</sup>
 			</p>
 		</form>
 	</main>

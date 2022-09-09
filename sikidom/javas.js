@@ -17,6 +17,12 @@ function valt(target) {
 		case 'haromszog':
 			document.getElementById('haromszog').style.display = 'block';
 			break;
+		case 'negyzet':
+			document.getElementById('negyzet').style.display = 'block';
+			break;
+		case 'hatszog':
+			document.getElementById('hatszog').style.display = 'block';
+			break;
 	}
 }
 
@@ -63,5 +69,19 @@ function haromszog_szamol() {
 	let c = parseInt(document.getElementById('haromszog_c').value);
 	let s = (a + b + c) / 2;
 	document.getElementById('haromszog_k').value = Math.round(a + b + c);
-	document.getElementById('haromszog_t').value = Math.round(Math.pow(s * (s-a) * (s-b) * (s-c), 1));
+	document.getElementById('haromszog_t').value = Math.round(Math.sqrt(s * (s-a) * (s-b) * (s-c)));
+}
+
+function negyzet_szamol() {
+	let a = parseInt(document.getElementById('negyzet_a').value);
+	document.getElementById('negyzet_k').value = Math.round(4 * a);
+	document.getElementById('negyzet_t').value = Math.round(a * a);
+	
+}
+
+function hatszog_szamol() { 
+	let a = parseInt(document.getElementById('hatszog_a').value);
+   
+   document.getElementById('hatszog_k').value = 6 * a;
+	document.getElementById('hatszog_t').value = Math.round(3 * Math.sqrt(3)/ 2 * Math.pow(a,2));
 }
