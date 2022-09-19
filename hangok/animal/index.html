@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Hangok</title>
+</head>
+<body>
+	<div id='linkek'>
+
+		<img src='headset.png' class='abra'>
+  
+		<a href='javascript:' onclick='lejatszas("szúnyog")'>Szúnyog</a><br>
+		<a href='javascript:' onclick='lejatszas("bárány")'>Bárány</a><br>
+		<a href='javascript:' onclick='lejatszas("malac")'>Malac</a><br>
+		<br>
+  
+		<div id='hang'>
+			<audio controls></audio>
+		</div>
+  
+		<input type='button' onclick='lejatszas("csend")' value='Némítás'>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>

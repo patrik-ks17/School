@@ -1,0 +1,43 @@
+#linkek {
+	margin: 36px 48px;
+	padding: 16px 160px 16px 36px;
+	width: 96px;
+	border: solid 2px #008;
+	border-radius: 12px;
+	background-color: #EEF;
+	text-align: center;
+	line-height: 32px;
+}
+
+#linkek a {
+	color: #006;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#linkek img.abra {
+	float: right;
+	margin-right:-128px;
+	width: 108px;
+}
+
+#linkek a:hover {
+	color: #00F;
+}
+
+#hang {
+	display: none;
+}
+
+audio {
+	width: 232px;
+}
+
+@media screen and (orientation: portrait) {
+   #hang {
+		width: 232px;
+		height:  48px;
+		padding-bottom:  16px;
+		/* display: block; */
+   }
+}
