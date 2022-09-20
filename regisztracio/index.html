@@ -9,22 +9,21 @@
 <body>
 	<main>
 		<h1>Azonosító adataid</h1>
-		<form>
+		<form onsubmit='return valid(this)'>
 			<hr>
-			<label for="email">e-mail címed: </label> <input type="text" id="email" onblur="emailcheck()"><br>
-		 	<label for="passw">leendő jelszavad: </label> <input type="password" id="passw" onblur="passwordcheck()"><br>
-			<label for="passwagain">jelszavad még egyszer: </label> <input type="password" id="passwagain" onblur="passwordcheck()"><br>
+			<label for="email">e-mail címed: </label> <input type="text" id="email"><br>
+		 	<label for="passw">leendő jelszavad: </label> <input type="password" id="passw"><br>
+			<label for="passwagain">jelszavad még egyszer: </label> <input type="password" id="passwagain"><br>
 			<label for="birth">születési dátumod: </label> <input type="date" id="birth"><br>
-			<label for="postalcode"></label> lakóhelyed irányítószáma: <input type="number" id="postalcode" onblur="postalcodecheck()"><br>
+			<label for="postalcode"></label> lakóhelyed irányítószáma: <input type="number" id="postalcode"><br>
 			<label for="school"></label> iskolai végzettséged: 
 			<fieldset id="school">
-				<input type="radio"> <span>általános iskola</span><br>
-				<input type="radio"> <span>középiskola</span><br>
-				<input type="radio"> <span>főiskola, egyetem</span><br>
+				<input type="checkbox"> <span>általános iskola</span><br>
+				<input type="checkbox"> <span>középiskola</span><br>
+				<input type="checkbox"> <span>főiskola, egyetem</span><br>
 			</fieldset>
 			<hr>
-			<button>Regisztrációs</button>
-		
+			<button type="submit" onclick="valid()">Regisztráció</button>
 		</form>
 	</main>
 	<script src="script.js"></script>
